@@ -1,0 +1,48 @@
+.crop {
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    transition-delay: .2s;
+    text-align:center
+       
+}
+.crop:hover{
+    transform: scale(1.2) ;
+    visibility: hidden;
+    width: 50px;
+     
+}  
+div {
+    cursor: pointer;
+}
+.wrapper {
+ 
+    display:inline-block;
+    padding: 10px;
+    height: 20px;
+    width:auto;
+}
+
+.contents, .contents .inner {
+    display:inline-block;
+}
+
+.contents {
+    white-space:nowrap;
+    margin-left: -1em;
+    padding-left: 1em;
+}
+
+.contents .inner {
+  
+    width:0%;
+    overflow:hidden;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+.wrapper:hover .contents .inner {
+    transform: scale(1.2) ;   
+    width:100%;
+}
