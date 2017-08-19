@@ -1,23 +1,9 @@
-<div class="crop" 
-[style.width.px]="starWidth"
-[title]="rating"
-(click)='onClick()'>
-<div>
-    <span class="glyphicon glyphicon-star"></span>
-    <span class="glyphicon glyphicon-star"></span>
-    <span class="glyphicon glyphicon-star"></span>
-    <span class="glyphicon glyphicon-star"></span>
-    <span class="glyphicon glyphicon-star"></span>
-</div>
-</div>
-<div class="wrapper">
-    <div class="contents">
-        <div class="inner">
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-        </div>
+<div class="crop" [style.width.px]="starWidth" [title]="rating" (hover)='onHover()'>
+    <div class="stars">
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
     </div>
 </div>

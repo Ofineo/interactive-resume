@@ -1,3 +1,4 @@
+
 .carousel-inner img {
   margin: auto;
   height: 500px;
@@ -5,31 +6,55 @@
 .side-nav{
         background-color: #e1b245;
         position: fixed;
-        top: 60px;
+        top: 70px;
         left: 225px;
         width: 225px;
-        margin-left: -225px;
-        border: none;
-        border-radius: 5;
+        margin-left: -200px;
         border-top: 1px rgba(0,0,0,.5) solid;
         overflow-y: auto;       
         bottom: 0;
         overflow-x: hidden;
         padding-bottom: 40px;
         border-color: #34b0da;
+        border-radius: 0px;
 }
+hr{
+  border-top: 1px solid #207693;
+  margin-top: 20px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+
+.fa-map-marker{
+  padding-right: 10px;
+  position: relative;
+  bottom: 3px;
+}
+.location:hover{
+  transform: scale(1.1);  
+  color: #207693;
+  cursor: pointer;
+}
+
 .userpic {
   float: none;
-  margin: 0 auto;
+  margin:20px;
   width: 75%;
-  height: 20%;
-  padding: 20px;
-  border-radius: 80% !important;
+  height: 15%;  
+  border-radius: 35px 50px 35px 50px;
+  border: 7px solid #207693;
+ 
 }
 
 .navbar-default {
   background-color: #e1b245;
   border-color: #34b0da;
+  border-radius: 0px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 5px;
+  
 }
 .navbar-default .navbar-brand {
   color: #000000;

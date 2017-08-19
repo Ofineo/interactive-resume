@@ -1,48 +1,35 @@
 .crop {
-    overflow: hidden;
-    transition: all .5s ease-in-out;
-    transition-delay: .2s;
-    text-align:center
-       
+ text-align: center;       
 }
-.crop:hover{
-    transform: scale(1.2) ;
-    visibility: hidden;
-    width: 50px;
-     
-}  
+
 div {
     cursor: pointer;
 }
-.wrapper {
- 
-    display:inline-block;
-    padding: 10px;
-    height: 20px;
-    width:auto;
+.stars{
+    display: inline-block;
+    background: none;
+    color: grey;
+    position: relative;
+    transition: color 0.5s ease-in;
 }
 
-.contents, .contents .inner {
-    display:inline-block;
+.stars:hover  {   
+    transform: scale(2.2);  
+    color: gold;       
 }
 
-.contents {
-    white-space:nowrap;
-    margin-left: -1em;
-    padding-left: 1em;
+.stars::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;    
+    background-color: blue;
+    transform-origin: left;
+    transition: width 0.25s ease;
+    z-index: -1;
 }
-
-.contents .inner {
-  
-    width:0%;
-    overflow:hidden;
-    -webkit-transition: width 1s ease-in-out;
-    -moz-transition: width 1s ease-in-out;
-    -o-transition: width 1s ease-in-out;
-    transition: width 1s ease-in-out;
-}
-
-.wrapper:hover .contents .inner {
-    transform: scale(1.2) ;   
-    width:100%;
+.stars:hover::after {
+    width: 100%;
 }
