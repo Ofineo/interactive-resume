@@ -1,0 +1,17 @@
+td{
+    padding-left: 20px;
+    color: #207693;
+  }
+ 
+  
+i.fa-star:hover{
+    padding-left: 12px;
+    transform: scale(2.2);
+    color: gold;
+    cursor: pointer;
+  }
+  span{
+      position: absolute;
+      left: 200px;
+      padding-left: 20px;
+  }
