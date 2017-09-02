@@ -1,7 +1,7 @@
+<!-- Fixed navbar -->
 <div>
-
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
+  <div class="navbar navbar-stacked-default ">
+    <div class="container-fluid col-xs-12 colsm-12 col-md-12 col-lg-12">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">{{title}}</a>
       </div>
@@ -9,8 +9,7 @@
         <li class="active"><a href="#">Home</a></li>
 
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Skills
-            <span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Skills<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">HTML</a></li>
             <li><a href="#">CSS</a></li>
@@ -20,30 +19,38 @@
         <li><a href="#">Experience</a></li>
         <li><a href="#">Expertise</a></li>
       </ul>
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-user"></i></a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+  <!--/.nav-collapse -->
+
+  <!-- Sidebar -->
   <div class="container-fluid text-center">
-    <div class="row content">
-      <div class="col-sm-2 sidenav">
-        <div class="navbar nav side-nav">
-          <img class="userpic" src='../assets/images/Foto-2.JPG' alt="Jordi" height="150px">
-          <p>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+        <ul id="sidebar" class="nav nav-stacked">
+          <img id="userpic" src='../assets/images/Foto-2.JPG' alt="Jordi">
+          <li>
             <app-star></app-star>
-          </p>
-          <h2>
-            <p>{{name}}</p>
-          </h2>
-          <h4>
-            <p>{{jobDescription}}</p>
-          </h4>
-          <h5 class>
-            <p><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>{{location}}</p>
-          </h5>
-          <hr>
-          <p><a href="#">Link</a></p>
-        </div>
+          </li>
+          <li>{{name}}</li>
+          <li>{{jobDescription}}</li>
+          <li>
+            <h5>
+              <p><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>{{location}}</p>
+            </h5>
+          </li>
+          <li><a href="#">TechMeMe</a></li>
+        </ul>
       </div>
-      <div class="col-sm-9 container">
+      <!-- Sidebar -->
+
+      <div class="container-stacked col-xs-12 col-sm-9 col-md-9 col-lg-10">
         <div class="jumbotron">
           <h2>Carousel</h2>
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -86,6 +93,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
