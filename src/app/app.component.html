@@ -1,13 +1,18 @@
 <!-- Fixed navbar -->
-<div>
-  <div class="navbar navbar-stacked-default ">
-    <div class="container-fluid col-xs-12 colsm-12 col-md-12 col-lg-12">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">{{title}}</a>
-      </div>
+
+<div class="navbar navbar-fixed-top ">
+  <div class="container-fluid ">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">{{title}}</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Skills<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -26,76 +31,101 @@
       </ul>
     </div>
   </div>
-  <!--/.nav-collapse -->
+</div>
+<!--/.nav-collapse -->
 
-  <!-- Sidebar -->
-  <div class="container-fluid text-center">
-
-    <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-        <ul id="sidebar" class="nav nav-stacked">
-          <img id="userpic" src='../assets/images/Foto-2.JPG' alt="Jordi">
+<!-- Sidebar -->
+<div class="container-fluid text-center">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+      <div id="sidebar" class="nav nav-stacked affix">
+        <div class="container-fluid">
+          <img class="img-responsive" id="userpic" src='../assets/images/Foto-2.JPG' alt="Jordi">
+        </div>
+        <ul class="list-unstyled">
           <li>
             <app-star></app-star>
           </li>
-          <li>{{name}}</li>
-          <li>{{jobDescription}}</li>
           <li>
-            <h5>
-              <p><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>{{location}}</p>
-            </h5>
+            <h2>{{name}}</h2>
           </li>
-          <li><a href="#">TechMeMe</a></li>
+          <li>
+            <h3>{{jobDescription}}</h3>
+          </li>
+          <li>
+            <h4>
+              <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>{{location}}</h4>
+          </li>
+          <hr>
+          <p>
+            Soy un programador entusiastico que desea mejorar y continuar en su preparacion Soy un programador entusiastico que desea
+            mejorar y continuar en su preparacion Soy un programador entusiastico que desea mejorar y continuar en su preparacion
+            Soy un programador entusiastico que desea mejorar y continuar en su preparacion
+          </p>
+
+          <hr>
+          <span>
+            <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> 
+            <i class="fa fa-instagram fa-3x " aria-hidden="true"></i>
+            <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-pinterest-square fa-3x" aria-hidden="true"></i>
+          </span>
+          <hr>
+          <span>
+            <i class="fa fa-print fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-download fa-3x" aria-hidden="true"></i> 
+          </span>
         </ul>
       </div>
-      <!-- Sidebar -->
+    </div>
+    <!-- Sidebar -->
 
-      <div class="container-stacked col-xs-12 col-sm-9 col-md-9 col-lg-10">
-        <div class="jumbotron">
-          <h2>Carousel</h2>
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+    <div class="container-stacked col-xs-12 col-sm-9 col-md-9 col-lg-10">
+      <div class="jumbotron">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src='../assets/images/Foto-1.jpg' alt="Jordi">
-              </div>
-
-              <div class="item">
-                <img src='../assets/images/Foto-2.JPG' alt="Ok">
-              </div>
-
-              <div class="item">
-                <img src='../assets/images/Foto-3.jpg' alt="colorful">
-              </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src='../assets/images/Foto-1.jpg' alt="Jordi">
             </div>
 
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <div class="item">
+              <img src='../assets/images/Foto-2.JPG' alt="Ok">
+            </div>
+
+            <div class="item">
+              <img src='../assets/images/Foto-3.jpg' alt="colorful">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
               <span class="glyphicon glyphicon-chevron-right"></span>
               <span class="sr-only">Next</span>
             </a>
-          </div>
-          <hr style="border-top: 1px solid black">
-          <div style="text-align:left">
-            <h2>Dashboard</h2>
-            <app-dash></app-dash>
-          </div>
+        </div>
+        <hr style="border-top: 1px solid black">
+        <div style="text-align:left">
+          <h2>Dashboard</h2>
+          <app-dash></app-dash>
         </div>
       </div>
-
     </div>
   </div>
+
 
   <footer class="container-fluid text-center">
     <p>DEVELOPED BY JORDI MELENDEZ</p>
