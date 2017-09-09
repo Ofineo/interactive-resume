@@ -21,6 +21,7 @@
             <li><a href="#">JavaScript</a></li>
           </ul>
         </li>
+        <li><a [routerLink]="['/dashboard']">Knowledge</a></li>
         <li><a href="#">Experience</a></li>
         <li><a href="#">Expertise</a></li>
       </ul>
@@ -45,7 +46,7 @@
         </div>
         <ul class="list-unstyled">
           <li>
-            <app-star></app-star>
+           <!-- <app-star></app-star>-->
           </li>
           <li>
             <h2>{{name}}</h2>
@@ -121,7 +122,8 @@
             </a>
         </div>
         <hr style="border-top: 1px solid black">
-        <app-dash></app-dash>
+        <router-outlet></router-outlet>
+        <!--<app-dash></app-dash> -->
       </div>
     </div>
   </div>

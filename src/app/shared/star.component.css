@@ -1,33 +1,12 @@
+.crop {
+    overflow: hidden;
+}
 div {
     cursor: pointer;
-}
-.stars{
     display: inline-block;
-    background: none;
-    color: grey;
+}
+.over{
     position: relative;
-    transition: color 0.5s ease-in-out;
-    vertical-align: middle;
-    transition: transform .7 ease-out; 
-}
-
-.stars:hover  {   
-    transform: scale(1.5);  
-    color: gold;       
-}
-
-.stars::after{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;    
-    background-color: blue;
-    transform-origin: left;
-    transition: width 0.5s ease;
-    z-index: -1;
-}
-.stars:hover::after {
-    width: 100%;
+    top: -5px;
+    left: -55px;
 }

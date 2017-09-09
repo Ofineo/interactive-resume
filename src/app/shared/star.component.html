@@ -1,8 +1,14 @@
-<div class="stars">
-    <span class="glyphicon glyphicon-star"></span>
-    <span class="glyphicon glyphicon-star"></span>
-    <span class="glyphicon glyphicon-star"></span>
-    <span class="glyphicon glyphicon-star"></span>
-    <span class="glyphicon glyphicon-star"></span>
-    <button (click)="changeDiv()" id="starCount" >stars</button>
+<div class="crop" 
+[style.width.px]="starWidth"
+[title]="rating">
+<div style="width: 86px">
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
 </div>
+</div>
+
+
+

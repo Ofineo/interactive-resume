@@ -1,17 +1,17 @@
-import { Component, OnChanges, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnChanges, Input } from '@angular/core';
 
 @Component({
-    selector: 'app-star',
+    selector: 'ai-star',
     templateUrl: 'star.component.html',
     styleUrls: ['star.component.css']
 
 })
 
-export class StarComponent {
+export class StarComponent implements OnChanges { 
     starWidth: number;
-    rating = 4;
-     changeDiv(){
-        const star = '<i class="fa fa-star" aria-hidden="true"></i>';
-        document.getElementById('starCount').innerHTML += star;
+    @Input() rating: number;
+
+    ngOnChanges(): void {
+        this.starWidth = this.rating * 86 / 5;
     }
 }
