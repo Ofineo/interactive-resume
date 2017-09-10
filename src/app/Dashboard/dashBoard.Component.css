@@ -2,16 +2,20 @@ td{
     padding-left: 20px;
     color: #1f3d7a;
   }
-
-  span{
-      left: 50px;
-      padding-left: 20px;    
-  }
       
-  td span:hover{
+ai-star{
+  transition: all 0.5s ease;
+}
+
+  ai-star:hover {
     display: inline-block;
-    padding-left: 12px;
-    transform: scale(1.5);
-    color: gold;
+    padding-left: 12px;    
     cursor: pointer;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    color: gold;
+    transform: 
+    scale(1.5); 
   }
+
+
