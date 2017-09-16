@@ -16,7 +16,9 @@ import { DashBoardComponent } from 'app/Dashboard/dashBoard.Component';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      {path: 'dashboard', component: DashBoardComponent}
+      {path: 'dashboard', component: DashBoardComponent},
+      {path: '', component: DashBoardComponent},
+      {path: '**', component: DashBoardComponent},
     ])
   ],
   providers: [
