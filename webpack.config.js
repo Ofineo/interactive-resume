@@ -62,6 +62,7 @@ const postcssPlugins = function () {
 
 module.exports = {
   "resolve": {
+
     "extensions": [
       ".ts",
       ".js"
@@ -468,6 +469,9 @@ module.exports = {
     "setImmediate": false
   },
   "devServer": {
+    "contentBase": path.join(__dirname, "src"),
+    "compress": true,
+    "port": 9000,
     "historyApiFallback": true
   }
 };

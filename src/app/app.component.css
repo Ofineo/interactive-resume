@@ -1,4 +1,7 @@
-
+#description{
+  padding-left: 4px;
+  padding-right: 4px;
+}
 .carousel-inner img {
   margin: auto;
   height: 500px;
