@@ -22,8 +22,11 @@ export class DefaultComponent implements OnInit, OnDestroy {
   sub: any;
   // tslint:disable-next-line:max-line-length
   quotations = [
-    'Twenty years from now you will be more disappointed by the things that you didn\'t do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.',
-    'Do the best you can until you know better. Then, when you know better, do better.'
+    'Twenty years from now you will be more disappointed by the things that you didn\'t do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover. -Mark Twain',
+    'Do the best you can until you know better. Then, when you know better, do better.',
+    'If someone tells you, "You can’t" they really mean, "I can’t." – Sean Stephenson',
+    'The best way to gain self-confidence is to do what you are afraid to do. -Unknown',
+    'If we’re growing, we’re always going to be out of our comfort zone. – John C Maxwell'
   ];
   quotation: string;
   i: number;
@@ -35,7 +38,7 @@ export class DefaultComponent implements OnInit, OnDestroy {
     this.sub = this.timer.subscribe(t => {
       this.qoutesRotation();
     });
-    this.i = Math.floor((Math.random() * 2));
+    this.i = Math.floor((Math.random() * 5));
     this.quotation = this.quotations[this.i];
   };
 
@@ -48,7 +51,7 @@ export class DefaultComponent implements OnInit, OnDestroy {
   qoutesRotation() {
 
     this.isVisible = this.isVisible ? false : true;
-    this.i = Math.floor((Math.random() * 2));
+    this.i = Math.floor((Math.random() * 5));
     this.quotation = this.quotations[this.i];
     setTimeout(() => {
       this.isVisible = this.isVisible ? false : true;
