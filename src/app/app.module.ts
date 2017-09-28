@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { StarComponent } from 'app/shared/star.component';
 import { DashBoardComponent } from 'app/Dashboard/dashBoard.Component';
 import { DefaultComponent } from './default/default.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 
 @NgModule({
@@ -14,12 +16,16 @@ import { DefaultComponent } from './default/default.component';
     AppComponent,
     StarComponent,
     DashBoardComponent,
-    DefaultComponent
+    DefaultComponent,
+    ExperienceComponent,
+    AboutMeComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       {path: 'dashboard', component: DashBoardComponent},
+      {path: 'experience', component: ExperienceComponent},
+      {path: 'about-me', component: AboutMeComponent},
       {path: '', component: DefaultComponent},
       {path: '**', component: DefaultComponent},
     ]),

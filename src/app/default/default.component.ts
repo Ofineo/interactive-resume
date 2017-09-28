@@ -10,8 +10,8 @@ import { trigger, state, animate, transition, style } from '@angular/animations'
     trigger('visibilityChanged', [
       state('true', style({ opacity: 1, transform: 'scale(1.0)' })),
       state('false', style({ opacity: 0, transform: 'scale(0.0)' })),
-      transition('1 => 0', animate('0.5s')),
-      transition('0 => 1', animate('0.3s'))
+      transition('1 => 0', animate('0.4s')),
+      transition('0 => 1', animate('0.5s'))
     ])
   ],
 })
@@ -26,7 +26,10 @@ export class DefaultComponent implements OnInit, OnDestroy {
     'Do the best you can until you know better. Then, when you know better, do better.',
     'If someone tells you, "You can’t" they really mean, "I can’t." – Sean Stephenson',
     'The best way to gain self-confidence is to do what you are afraid to do. -Unknown',
-    'If we’re growing, we’re always going to be out of our comfort zone. – John C Maxwell'
+    'If we’re growing, we’re always going to be out of our comfort zone. – John C Maxwell',
+    // tslint:disable-next-line:max-line-length
+    'If I had an hour to solve a problem, I’d spend 55 minutes thinking about the problem and 5 minutes thinking about solutions. - Albert Einstein',
+    'He who rejects change is the architect of decay.  - Harold Wilson'
   ];
   quotation: string;
   i: number;
@@ -34,7 +37,7 @@ export class DefaultComponent implements OnInit, OnDestroy {
   constructor() { }
 
   ngOnInit() {
-    this.timer = Observable.timer(2000, 5000);
+    this.timer = Observable.timer(2000, 10000);
     this.sub = this.timer.subscribe(t => {
       this.qoutesRotation();
     });
@@ -51,9 +54,11 @@ export class DefaultComponent implements OnInit, OnDestroy {
   qoutesRotation() {
 
     this.isVisible = this.isVisible ? false : true;
-    this.i = Math.floor((Math.random() * 5));
-    this.quotation = this.quotations[this.i];
     setTimeout(() => {
+      this.i++;
+      this.quotation = this.quotations[this.i % this.quotations.length];
+    }, 500)
+      setTimeout(() => {
       this.isVisible = this.isVisible ? false : true;
     }, 500)
   };

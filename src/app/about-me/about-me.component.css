@@ -1,0 +1,18 @@
+.status {
+    height: 150px;
+    width: 50%;
+    margin-bottom: 20px;
+	padding: 3px 0px 3px 166px;
+	border-top: 1px solid #D8E4E6;
+	border-bottom: 1px solid #D8E4E6;
+    background: /*#EFF4F5 */url(../../assets/images/hand.png) left center no-repeat; background-size: 200px 100px;
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.available {
+	font-size: 54px;
+	letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #4775d1;    
+}

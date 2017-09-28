@@ -1,7 +1,9 @@
-td{
+td, th{
     padding-left: 20px;
     color: #1f3d7a;
+    font-size: medium;
   }
+
       
 ai-star{
   transition: all 0.5s ease;
@@ -9,7 +11,7 @@ ai-star{
 
 ai-star:hover {
   display: inline-block;
-  padding-left: 12px;    
+  padding-left: 10px;    
   cursor: pointer;
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
