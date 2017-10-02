@@ -12,6 +12,7 @@
     text-transform: uppercase;
     color: #4775d1;    
     margin-top: 20px;
+    line-height: 90%;
     transform: scale(1, 1.5);
     -webkit-transform: scale(1.1, 1.8); /* Safari and Chrome */
     -moz-transform: scale(1.1, 1.8); /* Firefox */
