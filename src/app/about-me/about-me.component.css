@@ -22,8 +22,11 @@
 
 .background{
     width:100%; 
-    background-image :url(../../assets/images/vintage.jpg);
-    background-repeat: repeat;
+    background:url(../../assets/images/vintage.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     padding: 0px; 
     margin:0px;
 }

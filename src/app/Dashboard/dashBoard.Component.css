@@ -1,10 +1,9 @@
 td, th{
     padding-left: 20px;
     color: #1f3d7a;
-    font-size: medium;
+    font-size: x-large;
   }
-
-      
+     
 ai-star{
   transition: all 0.5s ease;
   }
@@ -19,5 +18,10 @@ ai-star:hover {
   transform: 
   scale(1.5); 
   }
-
+  img{
+    width: 55px;
+  }
+  .table > tbody > tr > td {
+    vertical-align: middle;
+}
 
