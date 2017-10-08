@@ -1,103 +1,106 @@
-<div class="row-fluid" style="text-align:left; display:block; vertical-align:middle;">
+<div class="row-fluid background" style="text-align:left; display:block; ">
     <div class="col-sm-12 col-md-6">
-    <table class="table table-hover">
-        <thead>
-            <th class="col-md-1 col-lg-3">Design</th>
-            <th class="col-md-2 col-lg-2"></th>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="../assets/images/Photoshop_min.png" alt="Photoshop" title="Photoshop" > Photoshop</td>
-                <td>
-                    <ai-star [rating]='3.5'></ai-star>
-                </td>
-                          
-            </tr>
-            <tr>
-                <td><img src="../assets/images/Illustrator_min.png" alt="illustrator" title="illustrator" >Illustrator</td>
-                <td>
-                    <ai-star [rating]='3.5'></ai-star>
-                </td>
-            
-            </tr>
-            <tr>
-                <td><img src="../assets/images/Web design_min.png" alt="Web Design" title="Web Design" >Web Design</td>
-                <td>
-                    <ai-star [rating]='3.5'></ai-star>
-                </td>
-            
-            </tr>
-        </tbody>
-    </table>
+        <table class="table table-hover">
+            <thead>
+                <th class="col-md-1 col-lg-3" colspan="2">
+                    <h1>Design</h1>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="../assets/images/photoshop.png" alt="Photoshop" title="Photoshop"></td>
+                    <td>
+                        <app-rating [circleRating]="'75'" [circleColor]="'green'"></app-rating>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><img src="../assets/images/Illustrator.png" alt="illustrator" title="illustrator"></td>
+                    <td>
+                        <app-rating [circleRating]='75' [circleColor]="'orange'"></app-rating>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><img src="../assets/images/webdesign.png" alt="Web Design" title="Web Design"></td>
+                    <td>
+                        <app-rating [circleRating]='65' [circleColor]="'purple'"></app-rating>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
     </div>
     <div class="col-sm-12 col-md-6">
-            <table class="table table-hover">
-                    <thead>                        
-                        <th class="col-md-1 col-lg-3">Programming</th>
-                        <th class="col-md-2 col-lg-2"></th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><img src="../assets/images/HTML_min.png" alt="HTML" title="HTML" >HTML</td>
-                            <td>
-                                <ai-star [rating]='3.5'></ai-star>
-                            </td>  
-                        </tr>
-                        <tr>
-                            <td><img src="../assets/images/CSS3_min.png" alt="CSS" title="CSS" >CSS</td>
-                            <td>
-                                <ai-star [rating]='3'></ai-star>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><img src="../assets/images/javascript_min.png" alt="Javascript" title="Javascript" >Javascript</td>
-                            <td>
-                                <ai-star [rating]='3.5'></ai-star>
-                            </td>
-                        </tr>
-                    
-            <tr>              
-                <td><img src="../assets/images/angularJS_min.png" alt="AngularJS" title="AngularJS" >AngularJS</td>
-                <td>
-                    <ai-star [rating]='3.5'></ai-star>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="../assets/images/npm_min.png" alt="NPM" title="NPM" >NPM</td>
-                <td>
-                    <ai-star [rating]='3'></ai-star>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="../assets/images/gulp_min.png" alt="Gulp" title="Gulp" style="height:70px; width:40px;">Gulp</td>
-                <td>
-                    <ai-star [rating]='3'></ai-star>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="../assets/images/webpack_min.png" alt="Webpack" title="Webpack" style="width:120px;" >Webpack</td>
-                <td>
-                    <ai-star [rating]='3'></ai-star>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="../assets/images/c_min.png" alt="C#" title="C#" >C#</td>
-                <td>
-                    <ai-star [rating]='3'></ai-star>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="../assets/images/sql_min.png" alt="SQL" title="SQL">SQL</td>
-                <td>
-                    <ai-star [rating]='3'></ai-star>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="../assets/images/net_min.png" alt="ASP.NET" title="ASP.NET">ASP.NET</td>
-                <td>
-                    <ai-star [rating]='2.4'></ai-star>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        <table class="table table-hover">
+            <thead>
+                <th class="col-md-1 col-lg-3" colspan="2">
+                    <h1>Programming</h1>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="../assets/images/html.png" alt="HTML" title="HTML"></td>
+                    <td>
+                        <app-rating [circleRating]='65' [circleColor]="'orange'"></app-rating>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/images/css.png" alt="CSS" title="CSS"></td>
+                    <td>
+                        <app-rating [circleRating]='60'></app-rating>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/images/js.png" alt="Javascript" title="Javascript"></td>
+                    <td>
+                        <app-rating [circleRating]='65' [circleColor]="'yellow'"></app-rating>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><img src="../assets/images/angular.png" alt="AngularJS" title="AngularJS"></td>
+                    <td>
+                        <app-rating [circleRating]='70' [circleColor]="'red'"></app-rating>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/images/npm.png" alt="NPM" title="NPM"></td>
+                    <td>
+                        <app-rating [circleRating]='60' [circleColor]="'green'"></app-rating>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/images/gulp.png" alt="Gulp" title="Gulp" style="height:99px; width:50px;"></td>
+                    <td>
+                        <app-rating [circleRating]='55' [circleColor]="'orange'"></app-rating>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/images/webpack.png" alt="Webpack" title="Webpack"></td>
+                    <td>
+                        <app-rating [circleRating]='55'></app-rating>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/images/csharp.png" alt="C#" title="C#" style="height:60px; width:60px;"></td>
+                    <td>
+                        <app-rating [circleRating]='60' [circleColor]="'purple'"></app-rating>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/images/sql.png" alt="SQL" title="SQL" style="height:65px; width:50px"></td>
+                    <td>
+                        <app-rating [circleRating]='55' [circleColor]="'green'"></app-rating>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/images/net.png" alt="ASP.NET" title="ASP.NET"></td>
+                    <td>
+                        <app-rating [circleRating]='45'></app-rating>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>

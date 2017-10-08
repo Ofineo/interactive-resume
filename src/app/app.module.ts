@@ -9,6 +9,7 @@ import { DashBoardComponent } from 'app/Dashboard/dashBoard.Component';
 import { DefaultComponent } from './default/default.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { RatingComponent } from './rating/rating.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     DefaultComponent,
     ExperienceComponent,
     AboutMeComponent,
+    RatingComponent,
   ],
   imports: [
     BrowserModule,
