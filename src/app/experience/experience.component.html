@@ -1,70 +1,212 @@
 <div class="container">
-  <h2 class="text-center">Portfolio</h2>
-  <!--<div class="row">
-    <div class="col-sm-4 portfolio-item">
-      <a data-target="#portfolioModal1" data-toggle="modal">
+  <h1 class="text-center mytitle">Portfolio</h1>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 portfolio-item">
+      <a data-toggle="modal" data-target="#portfolioModal1">
         <div class="caption">
           <div class="caption-content">
             <i class="fa fa-search-plus fa-3x"></i>
           </div>
         </div>
-        <img class="img-fluid" src='../assets/images/Foto-2.JPG' alt="">
+        <img class="img-fluid" src='../assets/images/Circus.png' alt="">
       </a>
     </div>
-    <div class="col-sm-4 portfolio-item">
-      <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
+    <div class="col-xs-12 col-sm-6 portfolio-item">
+      <a data-toggle="modal" data-target="#portfolioModal2">
         <div class="caption">
           <div class="caption-content">
             <i class="fa fa-search-plus fa-3x"></i>
           </div>
         </div>
-        <img class="img-fluid" src='../assets/images/Foto-2.JPG' alt="">
+        <img class="img-fluid" src='../assets/images/Meteor.png' alt="">
       </a>
     </div>
-   </div>
-  
-</div>
-<div class="modal fade show" id="portfolioModal1" tabindex="-1" role="dialog" style="display: block;">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"></div>
-        </div>
-      </div>  
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="modal-body">
-              <h2>Project Title</h2>
-              <hr class="star-primary">
-              <img class="img-fluid img-centered" src='../assets/images/Foto-2.JPG' alt="">
-              <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-              <ul class="list-inline item-details">
-                <li>Client:
-                  <strong>
-                    <a href="http://startbootstrap.com">Start Bootstrap</a>
-                  </strong>
-                </li>
-                <li>Date:
-                  <strong>
-                    <a href="http://startbootstrap.com">April 2014</a>
-                  </strong>
-                </li>
-                <li>Service:
-                  <strong>
-                    <a href="http://startbootstrap.com">Web Development</a>
-                  </strong>
-                </li>
-              </ul>
-              <button class="btn btn-success" type="button" data-dismiss="modal">
-                <i class="fa fa-times"></i>
-                Close</button>
-            </div>
+    <div class="col-xs-12 col-sm-6 portfolio-item">
+      <a data-toggle="modal" data-target="#portfolioModal3">
+        <div class="caption">
+          <div class="caption-content">
+            <i class="fa fa-search-plus fa-3x"></i>
           </div>
+        </div>
+        <img class="img-fluid" src='../assets/images/Vespa.png' alt="">
+      </a>
+    </div>
+    <div class="col-xs-12 col-sm-6 portfolio-item">
+      <a data-toggle="modal" data-target="#portfolioModal4">
+        <div class="caption">
+          <div class="caption-content">
+            <i class="fa fa-search-plus fa-3x"></i>
+          </div>
+        </div>
+        <img class="img-fluid" src='../assets/images/Satellite.png' alt="">
+      </a>
+    </div>
+  </div>
+
+  <!--Modal -->
+  <div class="modal fade " tabindex="-1" id="portfolioModal1" role="dialog">
+    <div class="modal-dialog">
+      <!--Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+          <button type="button" class="close" data-dismiss="modal">
+            <i class="fa fa-times fa-3x" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h1>The Circus! just Kidding</h1>
+          <hr class="star-primary">
+          <img class="img-responsive img-centered" src='../assets/images/Circus.png' alt="" style="display:inline-block">
+          <p>I will use this area to describe my project.</p>
+          <ul class="list-inline item-details">
+            <li>Client:
+              <strong>
+                <a href="#">For the purpose of training and learning</a>
+              </strong>
+            </li>
+            <li>Date:
+              <strong>
+                <a href="#">April 2017</a>
+              </strong>
+            </li>
+            <li>Service:
+              <strong>
+                <a href="#">Web Development</a>
+              </strong>
+            </li>
+          </ul>
+          <button class="btn btn-success btn-lg" type="button" data-dismiss="modal">
+            <i class="fa fa-times"></i>
+            Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade " tabindex="-1" id="portfolioModal2" role="dialog">
+    <div class="modal-dialog">
+      <!--Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+          <button type="button" class="close" data-dismiss="modal">
+            <i class="fa fa-times fa-3x" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h1>Armageddon...yeah...I wish</h1>
+          <hr class="star-primary">
+          <img class="img-responsive img-centered" src='../assets/images/Meteor.png' alt="" style="display:inline-block">
+          <p>I will use this area to describe my project.</p>
+          <ul class="list-inline item-details">
+            <li>Client:
+              <strong>
+                <a href="#">For the purpose of training and learning</a>
+              </strong>
+            </li>
+            <li>Date:
+              <strong>
+                <a href="#">June 2017</a>
+              </strong>
+            </li>
+            <li>Service:
+              <strong>
+                <a href="#">Web Development</a>
+              </strong>
+            </li>
+          </ul>
+          <button class="btn btn-success btn-lg" type="button" data-dismiss="modal">
+            <i class="fa fa-times"></i>
+            Close</button>
         </div>
       </div>
     </div>
-  </div>-->
+  </div>
+  <div class="modal fade " tabindex="-1" id="portfolioModal3" role="dialog">
+    <div class="modal-dialog">
+      <!--Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+          <button type="button" class="close" data-dismiss="modal">
+            <i class="fa fa-times fa-3x" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h1>My lovely Vespa</h1>
+          <hr class="star-primary">
+          <img class="img-responsive img-centered" src='../assets/images/Vespa.png' alt="" style="display:inline-block">
+          <p>I will use this area to describe my project.</p>
+          <ul class="list-inline item-details">
+            <li>Client:
+              <strong>
+                <a href="#">For the purpose of training and learning</a>
+              </strong>
+            </li>
+            <li>Date:
+              <strong>
+                <a href="#">July 2017</a>
+              </strong>
+            </li>
+            <li>Service:
+              <strong>
+                <a href="#">Web Development</a>
+              </strong>
+            </li>
+          </ul>
+          <button class="btn btn-success btn-lg" type="button" data-dismiss="modal">
+            <i class="fa fa-times"></i>
+            Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade " tabindex="-1" id="portfolioModal4" role="dialog">
+    <div class="modal-dialog">
+      <!--Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+          <button type="button" class="close" data-dismiss="modal">
+            <i class="fa fa-times fa-3x" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h1>Sputnik</h1>
+          <hr class="star-primary">
+          <img class="img-responsive img-centered" src='../assets/images/Satellite.png' alt="" style="display:inline-block">
+          <p>I will use this area to describe my project.</p>
+          <ul class="list-inline item-details">
+            <li>Client:
+              <strong>
+                <a href="#">For the purpose of training and learning</a>
+              </strong>
+            </li>
+            <li>Date:
+              <strong>
+                <a href="#">August 2017</a>
+              </strong>
+            </li>
+            <li>Service:
+              <strong>
+                <a href="#">Web Development</a>
+              </strong>
+            </li>
+          </ul>
+          <button class="btn btn-success btn-lg" type="button" data-dismiss="modal">
+            <i class="fa fa-times"></i>
+            Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
