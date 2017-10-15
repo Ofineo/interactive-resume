@@ -15,6 +15,7 @@
     flex-direction: column;
     justify-content: center;
     color: white;
+    
 }
 
 .caption:hover {
@@ -25,10 +26,12 @@
 }
 
   .mytitle {
-	font-size: 4vw;
-	letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #4775d1;    
+    font-family: "brandon-grotesque", Helvetica, Arial ,sans-serif;   
+    font-style: normal;      
+    font-weight: 700;
+    font-size: 5em;
+    letter-spacing: .05em;
+    color: #23323d;    
     margin-top: 20px;
     line-height: 90%;
     font-weight: bolder;
@@ -38,3 +41,57 @@
     -ms-transform: scale(1, 1.7); /* IE 9+ */
     -o-transform: scale(1, 1.7); /* Opera */
 }
+.undertitle{
+    font-size: 1.75em;
+    letter-spacing: .015em;
+    font-family: "brandon-grotesque", Helvetica, Arial ,sans-serif;
+    font-style: normal;    
+    font-weight: 300;
+}
+.undertext{
+    position: relative;
+    width: 30vw;
+    height: 10vw;
+    overflow-x: visible;
+    left: 19vw;
+    top: -5.5vw;
+    background:rgb(255, 192, 0,0.3);
+    margin: 0;
+}
+
+.pulse:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }
+    @keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }   

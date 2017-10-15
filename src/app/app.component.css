@@ -2,16 +2,22 @@
   padding: 10px;
 }
 
+.bar{
+  height: 0.6vw;
+  width: 7vw;
+  background-color: #ffc000;
+  display: inline-block
+}
 
 #sidebar{
-  background-color: #4775d1;
-  border-top: 1px rgba(0,0,0,.5) solid;
+  background-color: #23323d;
   overflow-y: auto;       
   overflow-x: hidden;
   padding-bottom: 40px;
   margin-top: 80px;
   border-radius: 0px;
   height: 100%;
+  color: white;  
 }
 
 #sidebar.affix {
@@ -25,7 +31,7 @@ hr{
   margin-right: 10px;
   margin-bottom: 15px;
   margin-left: 10px;
-  border-top: 1px solid #234590;
+  border-top: 1px solid #ffc000;
 }
 
 
@@ -61,77 +67,79 @@ hr{
 }
 
 .navbar-fixed-top {
-  background-color: #4775d1;
+  background-color: #23323d;
   border-radius: 0px;
   margin-left: 15px;
   margin-right: 15px;
-  margin-top: 5px;  
+  margin-top: 5px;
 }
 .navbar-fixed-top .navbar-brand {
-  color: #000000;
+  color: white;
 }
 .navbar-fixed-top .navbar-brand:hover,
 .navbar-fixed-top .navbar-brand:focus {
   color: #ffffff;
+  background-color: #ffc000;
 }
 .navbar-fixed-top .navbar-text {
-  color: #000000;
+  color: white;
 }
 .navbar-fixed-top .navbar-nav > li > a {
-  color: #000000;
+  color: white;
 }
 .navbar-fixed-top .navbar-nav > li > a:hover,
 .navbar-fixed-top .navbar-nav > li > a:focus {
-  color: #4775d1;
+  color: #23323d;
+  background-color: #ffc000;
 }
 .navbar-fixed-top .navbar-nav > li > .dropdown-menu {
-  background-color: #4775d1;
+  background-color: #23323d;
 }
 .navbar-fixed-top .navbar-nav > li > .dropdown-menu > li > a {
-  color: #000000;
+  color: white;
 }
 .navbar-fixed-top .navbar-nav > li > .dropdown-menu > li > a:hover,
 .navbar-fixed-top .navbar-nav > li > .dropdown-menu > li > a:focus {
   color: #ffffff;
-  background-color: #7194da;
+  background-color: #ffc000;
 }
 .navbar-fixed-top .navbar-nav > li > .dropdown-menu > li.divider {
-  background-color: #7194da;
+  background-color: #ffc000;
 }
 .navbar-fixed-top .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-fixed-top .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-fixed-top .navbar-nav .open .dropdown-menu > .active > a:focus {
   color: #ffffff;
-  background-color: #7194da;
+  background-color: #ffc000;
 }
 .navbar-fixed-top .navbar-nav > .active > a,
 .navbar-fixed-top .navbar-nav > .active > a:hover,
 .navbar-fixed-top .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #7194da;
+  background-color: #ffc000;
 }
 .navbar-fixed-top .navbar-nav > .open > a,
 .navbar-fixed-top .navbar-nav > .open > a:hover,
 .navbar-fixed-top .navbar-nav > .open > a:focus {
   color: #ffffff;
-  background-color: #7194da;
+  background-color: #ffc000;
 }
 .navbar-fixed-top .navbar-toggle {
-  border-color: #7194da;
+  border-color: #ffc000;
 }
 .navbar-fixed-top .navbar-toggle:hover,
 .navbar-fixed-top .navbar-toggle:focus {
-  background-color: #7194da;
+  background-color: #ffc000;
 }
 .navbar-fixed-top .navbar-toggle .icon-bar {
-  background-color: #000000;
+  background-color: white;
 }
 .navbar-fixed-top .navbar-collapse,
 .navbar-fixed-top .navbar-form {
-  border-color: #000000;
+  border-color: white;
 }
 .navbar-fixed-top .navbar-link {
-  color: #000000;
+  color: white;
 }
 .navbar-fixed-top .navbar-link:hover {
   color: #ffffff;
@@ -139,28 +147,28 @@ hr{
 
 @media (max-width: 767px) {
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > li > a {
-    color: #000000;
+    color:  #ffc000;
   }
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #ffffff;
+    color: #ffc000;
   }
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-fixed-top .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: #7194da;
+    background-color: #ffc000;
   }
 }
 footer {
   display: block;
   position: relative;
-  background-color: #4775d1;
+  background-color: #23323d;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   padding-right: 10px;
   width: 100%;
   height: 60px;
-  color: black;
+  color: white;
   clear:both;
   margin-bottom: 5px; 
 }

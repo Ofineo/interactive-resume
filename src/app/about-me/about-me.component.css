@@ -21,8 +21,15 @@
 }
 
 .background{
-    width:100%; 
-    background:url(../../assets/images/vintage.jpg)no-repeat center center fixed;
+    width: 100%; 
+    height: 100%;
+    opacity: 1;
+    transform: scale(1, 1);
+    -webkit-transform: scale(0.8, 0.8); /* Safari and Chrome */
+    -moz-transform: scale(0.87, 0.87); /* Firefox */
+    -ms-transform: scale(1, 1); /* IE 9+ */
+    -o-transform: scale(1, 1); /* Opera */    
+    background:url(../../assets/images/b-w.jpg)no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -30,3 +37,260 @@
     padding: 0px; 
     margin:0px;
 }
+
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query since this is the default in Bootstrap*/
+.undertext{
+    position: relative;
+    width: 87vw;
+    height: 150vw;
+    overflow-x: visible;
+    left: 5vw;
+    top: 3vw;
+    background:rgb(37, 53, 83,0.4);
+}
+.decoration{
+    position: absolute;
+    left: -3.2vw; 
+    top: -1vw;    
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50px;
+    background-color: #a1ff26;
+}
+.medecoration{
+    position: absolute;
+    left: -0.7vw; 
+    top: -2.7vw;    
+    width: 1vw;
+    height: 6vw;
+    background-color:white;
+}
+.mystory{
+    text-align: justify; 
+    font-size: 15px;
+    color:white; 
+    font-weight:bold; 
+    margin-top: 3vw;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    .undertext{
+        position: relative;
+        width: 87vw;
+        height: 90vw;
+        overflow-x: visible;
+        left: 5vw;
+        top: 3vw;
+        background:rgb(37, 53, 83,0.4);
+    }
+    .decoration{
+        position: absolute;
+        left: -3.2vw; 
+        top: -1vw;    
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50px;
+        background-color: #a1ff26;
+    }
+    .medecoration{
+        position: absolute;
+        left: -0.7vw; 
+        top: -2.7vw;    
+        width: 1vw;
+        height: 6vw;
+        background-color:white;
+    }
+    .mystory{
+        text-align: justify; 
+        font-size: 17px;
+        color:white; 
+        font-weight:bold; 
+        margin-top: 3vw;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    .undertext{
+        position: relative;        
+        width: 54vw;
+        height: 70vw;
+        overflow-x: visible;
+        left: 5vw;
+        top: 3vw;
+        background:rgb(37, 53, 83,0.4);
+    }
+    .decoration{
+        position: absolute;
+        left: -5vw; 
+        top: -1vw;    
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50px;
+        background-color: #a1ff26;
+    }
+    .medecoration{
+        position: absolute;
+        left: -2.8vw; 
+        top: -2.7vw;    
+        width: 1vw;
+        height: 6vw;
+        background-color:white;
+    }
+    .mystory{
+        text-align: justify; 
+        font-size: 15px;
+        color:white; 
+        font-weight:bold; 
+        margin-top: 3vw;
+    }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    .undertext{
+        position: relative;
+        width: 58vw;
+        height: 73vw;
+        overflow-x: visible;
+        left: 5vw;
+        top: 3vw;
+        background:rgb(37, 53, 83,0.4);
+    }
+    .decoration{
+        position: absolute;
+        left: -5vw; 
+        top: -1vw;    
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50px;
+        background-color: #a1ff26;
+    }
+    .medecoration{
+        position: absolute;
+        left: -2.8vw; 
+        top: -2.7vw;    
+        width: 1vw;
+        height: 6vw;
+        background-color:white;
+    }
+    .mystory{
+        text-align: justify; 
+        font-size: 18px;
+        color:white; 
+        font-weight:bold; 
+        margin-top: 3vw;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    .undertext{
+        position: relative;
+        width: 78vw;
+        height: 50vw;
+        overflow-x: visible;
+        left: 5vw;
+        top: 3vw;
+        background:rgb(37, 53, 83,0.4);
+    }
+    .decoration{
+        position: absolute;
+        left: -5vw; 
+        top: -1vw;    
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50px;
+        background-color: #a1ff26;
+    }
+    .medecoration{
+        position: absolute;
+        left: -2.8vw; 
+        top: -2.7vw;    
+        width: 1vw;
+        height: 6vw;
+        background-color:white;
+    }
+    .mystory{
+        text-align: justify; 
+        font-size: 20px;
+        color:white; 
+        font-weight:bold; 
+        margin-top: 3vw;
+    }
+ }
+ @media (min-width: 1500px) { 
+    .undertext{
+        position: relative;
+        width: 78vw;
+        height: 40vw;
+        overflow-x: visible;
+        left: 5vw;
+        top: 3vw;
+        background:rgb(37, 53, 83,0.4);
+    }
+    .decoration{
+        position: absolute;
+        left: -5vw; 
+        top: -1vw;    
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50px;
+        background-color: #a1ff26;
+    }
+    .medecoration{
+        position: absolute;
+        left: -2.8vw; 
+        top: -2.7vw;    
+        width: 1vw;
+        height: 6vw;
+        background-color:white;
+    }
+    .mystory{
+        text-align: justify; 
+        font-size: 21px;
+        color:white; 
+        font-weight:bold; 
+        margin-top: 3vw;
+    }
+
+ }
+
+ /* Extra large devices (large desktops, 1500px and up)*/
+@media (min-width: 1650px) { 
+    .undertext{
+        position: relative;
+        width: 78vw;
+        height: 37vw;
+        overflow-x: visible;
+        left: 5vw;
+        top: 3vw;
+        background:rgb(37, 53, 83,0.4);
+    }
+    .decoration{
+        position: absolute;
+        left: -5vw; 
+        top: -1vw;    
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50px;
+        background-color: #a1ff26;
+    }
+    .medecoration{
+        position: absolute;
+        left: -2.8vw; 
+        top: -2.7vw;    
+        width: 1vw;
+        height: 6vw;
+        background-color:white;
+    }
+    .mystory{
+        text-align: justify; 
+        font-size: 23px;
+        color:white; 
+        font-weight:bold; 
+        margin-top: 3vw;
+    }
+ }

@@ -12,7 +12,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
         <!--<li class="dropdown">
          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -41,20 +41,29 @@
     <!-- Sidebar -->
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-2">
       <div id="sidebar" class="nav nav-stacked affix">
-        <div class="container-fluid">
+        <!--<div class="container-fluid">
           <img class="img-responsive" id="userpic" src='../assets/images/Foto-2.JPG' alt="Jordi">
-        </div>
+        </div>-->
         <ul class="list-unstyled">
+          <br>
           <li>
-            <h2>{{name}}</h2>
+            <h2 style="text-transform: uppercase;">{{name}}</h2>
           </li>
+          <p class="bar"></p>
           <li>
             <h3>{{jobDescription}}</h3>
           </li>
           <li>
-            <h4>
-              <i class="fa fa-map-marker fa-2x hatch" aria-hidden="true"></i>{{location}}</h4>
+            <h2>
+              <i class="fa fa-map-marker fa-2x hatch" aria-hidden="true"></i>
+            </h2>
           </li>
+          <li>
+            <h4>
+              {{location}}</h4>
+          </li>
+          <br>
+          <br>
           <hr>
           <p id="description">
             I'm an energetic and commited developer who is able to work alongside other IT professionals. I keep on top of industry issues
