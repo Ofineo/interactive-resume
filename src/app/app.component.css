@@ -3,8 +3,8 @@
 }
 
 .bar{
-  height: 0.6vw;
-  width: 7vw;
+  height: 8px;
+  width: 120px;
   background-color: #ffc000;
   display: inline-block
 }
