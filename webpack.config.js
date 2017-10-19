@@ -355,7 +355,7 @@ module.exports = {
     new NoEmitOnErrorsPlugin(),
     new CopyWebpackPlugin([
       {
-        "context": "C:\\Users\\ofi\\interactive-resume\\src/",
+        "context": "src\\",
         "to": "",
         "from": {
           "glob": "assets/**/*",
@@ -363,7 +363,7 @@ module.exports = {
         }
       },
       {
-        "context": "C:\\Users\\ofi\\interactive-resume\\src/",
+        "context": "src\\",
         "to": "",
         "from": {
           "glob": "favicon.ico",
@@ -374,7 +374,8 @@ module.exports = {
       "ignore": [
         ".gitkeep"
       ],
-      "debug": "warning"
+      copyUnmodified: true,
+      "debug": "info"
     }),
     new ProgressPlugin(),
     new CircularDependencyPlugin({
