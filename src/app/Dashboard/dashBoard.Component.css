@@ -2,6 +2,12 @@ td, th{
     padding-left: 20px;
     color: #1f3d7a;
     font-size: x-large;
+   
+  }
+  h1{
+    text-align: -webkit-center;
+    text-align: -ms-center;
+    text-align: center;    
   }
      
 ai-star{
@@ -35,4 +41,10 @@ ai-star:hover {
   background-size: cover;
   padding: 0px; 
   margin:0px;
+}
+
+@media screen and (max-width: 500px) {
+ h1:last-of-type{   
+  font-size: 120%;
+ }
 }
