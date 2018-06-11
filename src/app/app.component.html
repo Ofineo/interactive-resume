@@ -1,18 +1,20 @@
 <!-- Fixed navbar -->
 
-<div class="navbar navbar-fixed-top ">
+<nav class="navbar navbar-fixed-top ">
   <div class="container-fluid ">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">{{title}}</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Home</a>
+        </li>
         <!--<li class="dropdown">
          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -21,9 +23,15 @@
             <li><a href="#">Project 3</a></li>
           </ul>
         </li>-->
-        <li><a [routerLink]="['/dashboard']">Skills</a></li>
-        <li><a [routerLink]="['/experience']">Portfolio</a></li>
-        <li><a [routerLink]="['/about-me']">About Me</a></li>
+        <li>
+          <a [routerLink]="['/dashboard']">Skills</a>
+        </li>
+        <li>
+          <a [routerLink]="['/experience']">Portfolio</a>
+        </li>
+        <li>
+          <a [routerLink]="['/about-me']">About Me</a>
+        </li>
       </ul>
       <!--<ul class="nav navbar-nav pull-right">
         <li><a href="#">Link</a></li>
@@ -32,11 +40,11 @@
       </ul>-->
     </div>
   </div>
-</div>
+</nav>
 <!--/.nav-collapse -->
 
 
-<div class="container-fluid text-center">
+<nav class="container-fluid text-center">
   <div class="row">
     <!-- Sidebar -->
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-2">
@@ -76,16 +84,28 @@
 
           <hr>
           <span>
-            <a style="color:inherit;" target="blank" href="https://www.facebook.com/jordi.melendez"><i class="fa fa-facebook-official fa-3x faa-tada animated-hover" aria-hidden="true"></i> </a>
-            <a style="color:inherit;" target="blank" href="http://v.imgins.com/ofineo"><i class="fa fa-instagram fa-3x faa-tada animated-hover" aria-hidden="true"></i></a>
-            <a style= "color:inherit;" target="blank" href="https://twitter.com/ofineo"><i class="fa fa-twitter-square fa-3x faa-tada animated-hover" aria-hidden="true"></i></a>
-            <a style="color:inherit;" href="mailto:ofineo@gmail.com?Subject=Web%20CV%20Contact" target="_top"><i class="fa fa-envelope-o fa-3x faa-tada animated-hover" aria-hidden="true"></i></a>
-            <a style= "color:inherit;" target="blank" href="https://github.com/Ofineo"><i class="fa fa-github fa-3x faa-tada animated-hover" aria-hidden="true"></i></a>
+            <a style="color:inherit;" target="blank" href="https://www.facebook.com/jordi.melendez">
+              <i class="fa fa-facebook-official fa-3x faa-tada animated-hover" aria-hidden="true"></i>
+            </a>
+            <a style="color:inherit;" target="blank" href="http://v.imgins.com/ofineo">
+              <i class="fa fa-instagram fa-3x faa-tada animated-hover" aria-hidden="true"></i>
+            </a>
+            <a style="color:inherit;" target="blank" href="https://twitter.com/ofineo">
+              <i class="fa fa-twitter-square fa-3x faa-tada animated-hover" aria-hidden="true"></i>
+            </a>
+            <a style="color:inherit;" href="mailto:ofineo@gmail.com?Subject=Web%20CV%20Contact" target="_top">
+              <i class="fa fa-envelope-o fa-3x faa-tada animated-hover" aria-hidden="true"></i>
+            </a>
+            <a style="color:inherit;" target="blank" href="https://github.com/Ofineo">
+              <i class="fa fa-github fa-3x faa-tada animated-hover" aria-hidden="true"></i>
+            </a>
           </span>
           <hr>
           <span>
-            <a style="color:inherit;" href="javascript:if(window.print)window.print()"><i class="fa fa-print fa-3x faa-horizontal animated-hover" aria-hidden="true"></i></a>
-            <i class="fa fa-download fa-3x faa-horizontal animated-hover" aria-hidden="true"></i> 
+            <a style="color:inherit;" href="javascript:if(window.print)window.print()">
+              <i class="fa fa-print fa-3x faa-horizontal animated-hover" aria-hidden="true"></i>
+            </a>
+            <i class="fa fa-download fa-3x faa-horizontal animated-hover" aria-hidden="true"></i>
           </span>
         </ul>
       </div>
@@ -93,14 +113,15 @@
     <!-- Sidebar end -->
 
     <div class="container-stacked col-xs-12 col-sm-8 col-md-8 col-lg-10">
-      <div class="jumbotron">     
-        
+      <div class="jumbotron">
+
         <router-outlet></router-outlet>
       </div>
     </div>
   </div>
+</nav>
 
-  <footer class="container-fluid text-center">
-      <img src="../favicon.ico" alt="Ofineo" style="display:inline-block; padding:10px; height:55px;">
-    <b>DEVELOPED BY JORDI MELENDEZ &copy;</b>
-  </footer>
+<footer class="container-fluid text-center">
+  <img src="../favicon.ico" alt="Ofineo" style="display:inline-block; padding:10px; height:55px;">
+  <b>DEVELOPED BY JORDI MELENDEZ &copy;</b>
+</footer>
